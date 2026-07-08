@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="SmartLender is a machine-learning-powered loan approval prediction application."
+    >
+
+    <title>SmartLender | Intelligent Loan Prediction</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+<div class="page-shell">
+
+    <!-- NAVIGATION -->
+
+    <header class="top-nav">
+
+        <a class="brand" href="#home">
+            <span class="brand-mark">SL</span>
+
+            <span class="brand-copy">
+                <strong>SmartLender</strong>
+                <small>Intelligent Loan Decisions</small>
+            </span>
+        </a>
+
+        <nav class="nav-tabs">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#predict">Predict</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#predict" class="nav-action">
+            Check Eligibility
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-copy">
+
+                <div class="hero-badge">
+                    <span class="live-dot"></span>
+                    Machine Learning Powered
+                </div>
+
+                <h1>
+                    Smarter loan decisions,
+                    <span>powered by data.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Analyze applicant profiles and receive intelligent
+                    loan approval predictions with probability-based
+                    insights in seconds.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#predict" class="primary-btn">
+                        Check Loan Eligibility
+                        <span>→</span>
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-btn">
+                        See How It Works
+                    </a>
+
+                </div>
+
+                <div class="trust-row">
+
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Real-time Analysis</span>
+                    </div>
+
+                    <div>
+                        <strong>Smart</strong>
+                        <span>ML Predictions</span>
+                    </div>
+
+                    <div>
+                        <strong>Clear</strong>
+                        <span>Probability Insights</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="visual-glow"></div>
+
+                <div class="decision-window">
+
+                    <div class="window-header">
+
+                        <div>
+                            <span class="window-label">
+                                SMARTLENDER ANALYSIS
+                            </span>
+
+                            <h3>Application Overview</h3>
+                        </div>
+
+                        <span class="system-status">
+                            <i></i>
+                            System Ready
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-preview">
+
+                        <div class="profile-icon">AP</div>
+
+                        <div>
+                            <strong>Applicant Profile</strong>
+                            <span>Ready for evaluation</span>
+                        </div>
+
+                        <span class="profile-check">✓</span>
+
+                    </div>
+
+
+                    <div class="analysis-preview">
+
+                        <div class="preview-row">
+                            <span>Income Profile</span>
+                            <strong>Analyzed</strong>
+                        </div>
+
+                        <div class="preview-bar">
+                            <span style="width: 86%;"></span>
+                        </div>
+
+
+                        <div class="preview-row">
+                            <span>Credit History</span>
+                            <strong>Evaluated</strong>
+                        </div>
+
+                        <div class="preview-bar">
+                            <span style="width: 74%;"></span>
+                        </div>
+
+
+                        <div class="preview-row">
+                            <span>Loan Burden</span>
+                            <strong>Calculated</strong>
+                        </div>
+
+                        <div class="preview-bar">
+                            <span style="width: 66%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="decision-footer">
+
+                        <div>
+                            <span>Model Status</span>
+                            <strong id="heroDecision">
+                                Ready for Prediction
+                            </strong>
+                        </div>
+
+                        <div class="decision-icon">→</div>
+
+                    </div>
+
+                    <p id="heroSummary" class="hero-summary">
+                        Enter applicant details to begin the analysis.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section class="features-section" id="features">
+
+            <div class="section-heading centered">
+
+                <span class="section-tag">
+                    WHY SMARTLENDER
+                </span>
+
+                <h2>
+                    Intelligent analysis for better decisions
+                </h2>
+
+                <p>
+                    SmartLender combines applicant information with
+                    machine learning to deliver fast and understandable
+                    loan eligibility insights.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">01</div>
+
+                    <h3>Instant Prediction</h3>
+
+                    <p>
+                        Evaluate applicant information and receive a
+                        real-time loan approval prediction.
+                    </p>
+
+                    <span class="feature-link">
+                        Fast decision support →
+                    </span>
+
+                </article>
+
+
+                <article class="feature-card featured">
+
+                    <div class="feature-icon">02</div>
+
+                    <h3>Risk Assessment</h3>
+
+                    <p>
+                        Analyze income, credit history, loan burden,
+                        and applicant characteristics.
+                    </p>
+
+                    <span class="feature-link">
+                        Data-driven analysis →
+                    </span>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">03</div>
+
+                    <h3>Probability Insights</h3>
+
+                    <p>
+                        Understand model confidence and approval
+                        probability alongside the final prediction.
+                    </p>
+
+                    <span class="feature-link">
+                        Clear model insights →
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+
+        <section class="workflow-section" id="how-it-works">
+
+            <div class="workflow-copy">
+
+                <span class="section-tag">
+                    SIMPLE PROCESS
+                </span>
+
+                <h2>
+                    From applicant details to intelligent insights.
+                </h2>
+
+                <p>
+                    SmartLender simplifies the prediction workflow
+                    into three clear steps.
+                </p>
+
+                <a href="#predict" class="text-action">
+                    Start an analysis
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="workflow-steps">
+
+                <article class="workflow-step">
+
+                    <span class="step-number">01</span>
+
+                    <div>
+                        <h3>Enter Applicant Details</h3>
+
+                        <p>
+                            Provide financial, personal, credit,
+                            and loan-related information.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="workflow-step">
+
+                    <span class="step-number">02</span>
+
+                    <div>
+                        <h3>Smart Analysis</h3>
+
+                        <p>
+                            The trained machine learning model evaluates
+                            the applicant profile and engineered features.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="workflow-step">
+
+                    <span class="step-number">03</span>
+
+                    <div>
+                        <h3>Receive Prediction</h3>
+
+                        <p>
+                            View the loan decision, prediction confidence,
+                            and approval probability.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PREDICTION -->
+
+        <section class="predict-section" id="predict">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    LOAN ELIGIBILITY ANALYZER
+                </span>
+
+                <h2>
+                    Analyze an applicant profile
+                </h2>
+
+                <p>
+                    Complete the application details to receive an
+                    instant machine-learning-powered prediction.
+                </p>
+
+            </div>
+
+
+            <div class="prediction-workspace">
+
+                <!-- FORM -->
+
+                <form id="loanForm" class="application-form">
+
+                    <div class="form-header">
+
+                        <div>
+                            <span>APPLICATION DETAILS</span>
+                            <h3>Applicant Information</h3>
+                        </div>
+
+                        <span class="form-count">
+                            11 Inputs
+                        </span>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+
+                            <select
+                                id="gender"
+                                name="Gender"
+                                required
+                            >
+                                <option value="">Select Gender</option>
+                                <option value="1">Female</option>
+                                <option value="0">Male</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="married">
+                                Marital Status
+                            </label>
+
+                            <select
+                                id="married"
+                                name="Married"
+                                required
+                            >
+                                <option value="">Select Status</option>
+                                <option value="1">Married</option>
+                                <option value="0">Single</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="dependents">
+                                Dependents
+                            </label>
+
+                            <select
+                                id="dependents"
+                                name="Dependents"
+                                required
+                            >
+                                <option value="">Select Dependents</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3+">3+</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="education">
+                                Education
+                            </label>
+
+                            <select
+                                id="education"
+                                name="Education"
+                                required
+                            >
+                                <option value="">Select Education</option>
+                                <option value="1">Graduate</option>
+                                <option value="0">Not Graduate</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="selfEmployed">
+                                Self Employed
+                            </label>
+
+                            <select
+                                id="selfEmployed"
+                                name="Self_Employed"
+                                required
+                            >
+                                <option value="">Select Option</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="applicantIncome">
+                                Applicant Income
+                            </label>
+
+                            <input
+                                type="number"
+                                id="applicantIncome"
+                                name="ApplicantIncome"
+                                min="0"
+                                placeholder="e.g., 5000"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="coapplicantIncome">
+                                Co-Applicant Income
+                            </label>
+
+                            <input
+                                type="number"
+                                id="coapplicantIncome"
+                                name="CoapplicantIncome"
+                                min="0"
+                                placeholder="e.g., 2000"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="loanAmount">
+                                Loan Amount
+                                <span>(in thousands)</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="loanAmount"
+                                name="LoanAmount"
+                                min="1"
+                                placeholder="e.g., 150"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="loanTerm">
+                                Loan Term
+                                <span>(months)</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="loanTerm"
+                                name="Loan_Amount_Term"
+                                min="1"
+                                placeholder="e.g., 360"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="creditHistory">
+                                Credit History
+                            </label>
+
+                            <select
+                                id="creditHistory"
+                                name="Credit_History"
+                                required
+                            >
+                                <option value="">
+                                    Select Credit History
+                                </option>
+
+                                <option value="1">Good</option>
+                                <option value="0">Poor</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="propertyArea">
+                                Property Area
+                            </label>
+
+                            <select
+                                id="propertyArea"
+                                name="Property_Area"
+                                required
+                            >
+                                <option value="">Select Area</option>
+                                <option value="2">Urban</option>
+                                <option value="1">Semi-Urban</option>
+                                <option value="0">Rural</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn-submit"
+                    >
+                        <span>Analyze Loan Application</span>
+                        <strong>→</strong>
+                    </button>
+
+                </form>
+
+
+                <!-- RESULT PANEL -->
+
+                <aside class="analysis-panel">
+
+                    <div class="analysis-header">
+
+                        <span class="section-tag">
+                            DECISION ANALYSIS
+                        </span>
+
+                        <h3>Applicant Evaluation</h3>
+
+                        <p>
+                            SmartLender evaluates key applicant factors
+                            to generate a prediction.
+                        </p>
+
+                    </div>
+
+
+                    <div class="factor-list">
+
+                        <div class="factor-item">
+
+                            <span class="factor-icon">01</span>
+
+                            <div>
+                                <strong>Income Profile</strong>
+                                <p>
+                                    Applicant and co-applicant income
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-item">
+
+                            <span class="factor-icon">02</span>
+
+                            <div>
+                                <strong>Loan Burden</strong>
+                                <p>
+                                    Loan amount and income relationship
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-item">
+
+                            <span class="factor-icon">03</span>
+
+                            <div>
+                                <strong>Credit Profile</strong>
+                                <p>
+                                    Credit history and applicant details
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-item">
+
+                            <span class="factor-icon">04</span>
+
+                            <div>
+                                <strong>Property Information</strong>
+                                <p>
+                                    Applicant property area category
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="result-section"
+                        id="resultSection"
+                        style="display: none;"
+                    >
+
+                        <div
+                            class="result-card"
+                            id="resultCard"
+                        >
+
+                            <span class="result-label">
+                                PREDICTION RESULT
+                            </span>
+
+                            <div
+                                class="result-status"
+                                id="resultStatus"
+                            ></div>
+
+
+                            <div class="result-details">
+
+                                <div>
+                                    <span>Prediction Confidence</span>
+                                    <strong id="confidence"></strong>
+                                </div>
+
+                                <div>
+                                    <span>Approval Probability</span>
+                                    <strong id="probability"></strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="error-section"
+                        id="errorSection"
+                        style="display: none;"
+                    >
+
+                        <div
+                            class="error-message"
+                            id="errorMessage"
+                        ></div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALYSIS FEATURES -->
+
+        <section class="intelligence-section">
+
+            <div class="intelligence-content">
+
+                <span class="section-tag">
+                    INTELLIGENT ASSESSMENT
+                </span>
+
+                <h2>
+                    More than a simple approval prediction.
+                </h2>
+
+                <p>
+                    SmartLender evaluates multiple dimensions of an
+                    applicant profile to support consistent,
+                    data-informed loan assessment.
+                </p>
+
+            </div>
+
+
+            <div class="intelligence-grid">
+
+                <article>
+                    <span>01</span>
+                    <strong>Income Analysis</strong>
+                    <p>
+                        Evaluates applicant and combined income information.
+                    </p>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <strong>Credit History</strong>
+                    <p>
+                        Incorporates previous credit history into analysis.
+                    </p>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <strong>Loan Burden</strong>
+                    <p>
+                        Analyzes loan amount relative to applicant income.
+                    </p>
+                </article>
+
+                <article>
+                    <span>04</span>
+                    <strong>Profile Factors</strong>
+                    <p>
+                        Considers education, employment, and property area.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-mark">SL</div>
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    ABOUT SMARTLENDER
+                </span>
+
+                <h2>
+                    Machine learning for smarter loan assessment.
+                </h2>
+
+                <p>
+                    SmartLender is an intelligent decision-support
+                    application that demonstrates how machine learning
+                    can be integrated with a modern web experience to
+                    analyze applicant profiles and generate real-time
+                    loan approval predictions.
+                </p>
+
+                <div class="about-tags">
+                    <span>Machine Learning</span>
+                    <span>Real-Time Prediction</span>
+                    <span>Probability Analysis</span>
+                    <span>Decision Support</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <span class="brand-mark">SL</span>
+
+            <div>
+                <strong>SmartLender</strong>
+                <p>Intelligent Loan Prediction</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                Machine-learning-powered loan assessment application.
+            </p>
+
+            <span>
+                Developed by <strong>Sai Pranavi Karumuri</strong>
+                • © 2026
+            </span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
