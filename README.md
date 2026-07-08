@@ -21,7 +21,9 @@ Smart Lender is an end-to-end machine learning web application that analyzes app
 ### 🔗 Project Links
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-View_Application-0F766E?style=for-the-badge)] https://smart-lender-credit-eligiblity-1.onrender.com
+
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)] https://github.com/Pranavi7777/smart_lender_credit_eligiblity
+
 [![Demo Video](https://img.shields.io/badge/Demo-Video-FF0000?style=for-the-badge&logo=youtube)]
 https://drive.google.com/file/d/19RYqKajJ6J-OMd2v-9A15cyXmCfVBLjk/view
 
